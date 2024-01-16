@@ -11,7 +11,7 @@
 .App {
     width: 100vw;
     height: 100vh;
-    background-color: #ffffff;
+    background-image: url("images/fond_player.jpeg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@
 
 .song-player {
     height: 60px;
-    background-color: #292c53;
+    background-image: url("images/fond_player.jpeg");
     position: absolute;
     bottom: 5px;
     left: 10px;
