@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Application de Playlist Musicale
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue dans l'application de Playlist Musicale "MDSongs". C'est une application en ReactJs qui a été conçue dans le cadre du cours Framework JS dispensé par Aurelien BOIS à MyDigitalSchool Toulouse. Le but a été de faire une surprise à nos camarades de classe en générant une musique amusante sur eux.
 
-## Available Scripts
 
-In the project directory, you can run:
+Merci à toutes les personnes de loin ou de près qui nous ont aidé à avoir ce résultat.
 
-### `npm start`
+## Architecture de l'Application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+L'application est développée en utilisant ReactJS et suit une structure bien organisée pour améliorer la lisibilité et la maintenance du code. Voici un aperçu de l'architecture :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Composants :** Les différents composants de l'application sont séparés dans des fichiers individuels pour favoriser la modularité. Les composants principaux incluent `Homepage`, `OneSong`, et `SongPlayer`.
 
-### `npm test`
+- **Fournisseurs de Contexte :** Les fichiers liés aux fournisseurs de contexte, tels que `SongContextProvider` et `SongsContext`, sont regroupés dans un dossier "providers". Ces contextes sont utilisés pour gérer l'état global de l'application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Données des Chansons :** Les données des chansons sont stockées dans le fichier `sons.js` dans un dossier distinct. Cela sépare les données de l'application de la logique des composants.
 
-### `npm run build`
+- **Ressources :** Les images et les fichiers audio sont organisés dans des dossiers distincts sous "assets"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instructions de Déploiement
 
-### `npm run eject`
+1. Clônez le projet depuis le dépôt GitHub.
+2. Installez les dépendances en utilisant `npm install`.
+3. Ajoutez des chansons à la collection "songs" de Firestore dans la console Firebase.
+4. Lancez l'application avec `npm start`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

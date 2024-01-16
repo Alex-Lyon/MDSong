@@ -1,5 +1,11 @@
 const sons = [
     {
+        song: "alex/alex_song.mp3",
+        cover: "alex/alex_cover.jpg",
+        title: "Child of God",
+        artist: "Alex"
+    },
+    {
         song: "alix/alix_song.mp3",
         cover: "alix/alix_cover.jpeg",
         title: "Sous le vent",
